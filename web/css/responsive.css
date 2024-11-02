@@ -1,0 +1,453 @@
+/* PC */
+@media screen and (min-width: 992px) {
+  .mobile-header {
+    display: none;
+  }
+}
+
+/* Tablet & Mobile*/
+@media screen and (max-width: 991px) {
+  .navbar {
+    position: relative;
+  }
+
+  .navbar .logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: 20px;
+  }
+
+  .navbar ul {
+    display: none;
+  }
+  .navbar .actions .action-link {
+    display: none;
+  }
+  .navbar .open {
+    display: none;
+  }
+
+  .toggle-menu {
+    width: 20px;
+    color: #fb8f2c;
+    margin-left: 85px;
+  }
+
+  .menu-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 1;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s ease;
+  }
+
+  .menu-drawer {
+    position: fixed;
+    inset: 0 80% 0 0;
+    background: #000;
+    z-index: 2;
+    padding: 60px;
+    transform: translate(-100%);
+    transition: 0.5s ease;
+  }
+
+  .menu-drawer ul {
+    margin-top: 40px;
+  }
+
+  .menu-drawer ul a {
+    display: inline-block;
+    padding: 24px 0;
+    color: #fff;
+    font-family: "Plus Jakarta Sans", sans-serif;
+  }
+
+  .menu-drawer ul a:hover {
+    color: #fb8f2c;
+  }
+  .menu-checkbox:checked ~ .menu-overlay {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .menu-checkbox:checked ~ .menu-drawer {
+    transform: translate(0);
+  }
+}
+
+/* Tablet */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .menu-drawer {
+    inset: 0 65% 0 0;
+  }
+  ul li a.login {
+    display: none;
+  }
+  .navbar img {
+    margin-left: 260px;
+  }
+
+  .hero {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .hero .title {
+    font-size: 36px;
+    line-height: 52px;
+  }
+
+  .hero .main-pic img {
+    margin-top: 52px;
+    margin-left: -20px;
+  }
+
+  .count1 .content {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .count1 .content .stat {
+    padding: 12px;
+  }
+
+  .count1 .content .stat .number {
+    font-size: 26px;
+  }
+
+  .most-popular-food h1 {
+    font-size: 36px;
+  }
+
+  .most-popular-food .ppl-sub {
+    width: 78%;
+    font-size: 20px;
+    margin-left: 85px;
+  }
+
+  .most-popular-food .content .img-ppl {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    margin-left: 190px;
+  }
+
+  .most-popular-food .content .img-ppl h3 {
+    font-size: 25px;
+  }
+
+  .most-popular-food .content .img-ppl p {
+    width: 50%;
+    margin-bottom: 30px;
+    font-size: 20px;
+  }
+
+  .visit h1 {
+    font-size: 36px;
+    margin-top: 100px;
+  }
+
+  .visit p {
+    width: 70%;
+  }
+
+  .visit .img-visit {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .deals h1 {
+    font-size: 36px;
+  }
+
+  .deals .content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .deals .content .lunch {
+    width: 80%;
+    height: 350px;
+    margin-left: 85px;
+  }
+
+  .deals .deals-menu {
+    width: 78%;
+  }
+
+  .deals .food-item {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    margin-left: 200px;
+  }
+
+  .deals .food-item img {
+    width: 100%;
+    height: auto;
+  }
+
+  .food-info h3 {
+    margin-top: 20px;
+    font-size: 30px;
+  }
+
+  .food-info p {
+    font-size: 24px;
+  }
+
+  .food-info .price {
+    font-size: 22px;
+  }
+
+  .services {
+    display: none;
+  }
+
+  .article .content .blog {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    margin-left: 145px;
+  }
+
+  .article .blog .pic2 {
+    margin-left: 0;
+    margin-bottom: 30px;
+  }
+
+  .article .blog a {
+    width: 15%;
+  }
+
+  .newsletter {
+    display: none;
+  }
+}
+
+/* Mobile */
+@media screen and (max-width: 767px) {
+  .toggle-menu {
+    margin-left: 24px;
+  }
+
+  .navbar .logo {
+    position: absolute;
+    margin-top: 20px;
+    margin-left: 20px;
+  }
+
+  .navbar img {
+    margin-left: 140px;
+  }
+
+  .logo-desktop img {
+    margin-left: 96px;
+  }
+
+  .navbar .actions {
+    display: none;
+  }
+
+  .menu-drawer {
+    width: 50%;
+  }
+
+  ul li a.login {
+    border: 2px solid #fb8f2c;
+    border-radius: 8px;
+    padding: 5px;
+    margin-top: 10px;
+  }
+
+  .hero {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .hero .info {
+    margin-left: 10px;
+  }
+
+  .hero .subtitle {
+    margin-top: 30px;
+  }
+
+  .hero .title {
+    font-size: 35px;
+    line-height: 45px;
+  }
+
+  .hero .desc {
+    width: 100%;
+  }
+
+  .hero .main-pic img {
+    margin-left: -40px;
+    width: 150%;
+  }
+
+  .count1 .content {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .count1 .content .stat {
+    padding: 12px;
+  }
+
+  .count1 .content .stat .number {
+    font-size: 20px;
+  }
+
+  .count1 .content .stat .label {
+    font-size: 20px;
+  }
+
+  .most-popular-food h1 {
+    font-size: 30px;
+  }
+
+  .most-popular-food .ppl-sub {
+    font-size: 12px;
+  }
+
+  .most-popular-food .content .img-ppl {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .most-popular-food .content .img-ppl h3 {
+    font-size: 20px;
+  }
+
+  .most-popular-food .content .img-ppl p {
+    width: 70%;
+    margin-bottom: 30px;
+    font-size: 14px;
+  }
+
+  .visit h1 {
+    font-size: 30px;
+    margin-top: 100px;
+  }
+
+  .visit p {
+    width: 70%;
+    font-size: 12px;
+  }
+
+  .visit .img-visit {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .deals h1 {
+    font-size: 30px;
+  }
+
+  .deals .content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .deals .content .lunch {
+    width: 100%;
+    height: 350px;
+    margin-left: 0;
+  }
+
+  .deals .deals-menu {
+    width: 100%;
+  }
+
+  .deals .food-item {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    margin-left: 25px;
+  }
+
+  .deals .food-item img {
+    width: 100%;
+    height: auto;
+    margin-left: 15px;
+  }
+
+  .food-info {
+    margin-right: 5px;
+  }
+
+  .food-info h3 {
+    margin-top: 20px;
+    font-size: 20px;
+  }
+
+  .food-info p {
+    font-size: 18px;
+  }
+
+  .food-info .price {
+    font-size: 22px;
+  }
+
+  .services {
+    display: none;
+  }
+
+  .article .title p {
+    margin-top: 70px;
+  }
+
+  .article .title h1 {
+    font-size: 30px;
+  }
+
+  .article .blog {
+    margin-top: 50px;
+  }
+
+  .article .content .blog img {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .article .blog .pic1 {
+    width: 100%;
+  }
+  .article .blog .pic2 {
+    width: 100%;
+  }
+
+  .article .blog .date {
+    display: none;
+  }
+
+  .article .blog h4 {
+    margin-left: 5px;
+  }
+
+  .article .blog p.desc {
+    margin-left: 5px;
+    font-size: 14px;
+  }
+
+  .article .blog a {
+    margin-left: 5px;
+    width: 20%;
+  }
+
+  .newsletter {
+    display: none;
+  }
+
+  footer {
+    display: none;
+  }
+}

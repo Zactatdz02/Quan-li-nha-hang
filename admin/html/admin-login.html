@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng nhập</title>
+    <link rel="stylesheet" href="../css/admin-login.css">
+    <link href="https://db.onlinewebfonts.com/c/1f483bd09c2e0a8024986b03d115f4e3?family=Arian+LT+Demi" rel="stylesheet">
+    <script src="../js/admin-login.js" defer></script>
+</head>
+<body>
+    <div class="login-container">
+        <div class = "left-panel">
+            <h1>Welcome</h1>
+            <h3>Please login to Admin Dashboard.</h3>
+            <form action="#" method="post" id="login">
+                <div class="input">
+                    <div class="icon">
+                        <input type="text" id="username" name="username" placeholder="Tên đăng nhập" onfocus="this.placeholder=''" onblur="this.placeholder='Tên đăng nhập'" required> 
+                        <img src="../images/user.png">
+                    </div>
+                </div>
+                <div class="input">
+                    <div class="icon">
+                        <input type="password" id="password" name="password" placeholder="Mật khẩu" onfocus="this.placeholder=''" onblur="this.placeholder='Mật khẩu'" required>
+                        <img src="../images/lock.png">
+                    </div>    
+                </div>
+                <button type="submit">Đăng nhập</button>
+                </form>
+            </div>    
+            <div class="divider"></div>
+            <div class="right-panel">
+                <img src="../images/logo.png" alt="Logo">
+                <h2>H2AK's restaurant.</h2>
+            </div>
+        </div>
+        
+</body>
+</html>

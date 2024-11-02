@@ -1,0 +1,288 @@
+body{
+    position: relative;
+    max-width: 1440px;
+    height: 1612px;
+    background: #111114;
+    color: #FFFFFF;
+    margin: 0 auto;
+    font-family: 'Plus Jakarta Sans';
+}
+.header{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.nav1{
+    margin-left: 40px;
+}
+ul.link{
+    list-style: none;
+    display: flex;
+    justify-items: flex-start;
+    gap: 34px;
+    padding-inline-start: 0px;
+}
+li.head, a.head{
+    display: inline-block;
+    text-decoration: none;
+    font-size: 18px;
+    color: #FFFFFF;
+    font-family: 'Plus Jakarta Sans';
+}
+.link a:hover{
+    color: #FB8F2C;
+}
+.logo{
+    display: flex;
+    justify-content: center;
+    margin-right: 150px;
+}
+.nav2{
+    margin-right: 80px;
+    margin-left: 100px;
+}
+ul.open{
+    list-style: none;
+    display: flex;
+    justify-items: flex-end;
+    gap: 34px;
+}
+.open a.head{
+    padding-bottom: 0px;
+}
+.open-info li{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.online-reservation{
+    text-align: center;
+    background-image: url(../images/table-reservation/Rectangle\ 26.svg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    backdrop-filter: blur(5px);
+    margin-bottom: 50px;
+    box-sizing: border-box;
+}
+h2{
+    font-family: 'Libre Bodoni';
+    font-size: 64px;
+    padding-top: 30px;
+}
+p{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 26px;
+}
+form{
+    box-sizing: border-box;
+}
+.input-box{
+    display: inline-block;
+    margin: 40px 20px 20px 30px;
+}
+input, select{
+    width: 370px;
+    height: 56px;
+    border: none;
+    background-color: rgba(207, 210, 222, 0.3);
+    padding-left: 15px; 
+    padding-right: 10px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+select:focus{
+    outline: 0;
+    box-sizing: border-box;
+}
+input:focus{
+    font-size: 16px;
+    color: #FFFFFF;
+    outline: 0;
+    box-sizing: border-box;
+}
+input:not(:placeholder-shown){
+    font-size: 16px;
+    color: #FFFFFF;
+}
+input[type="date"]{
+    font-size: 16px;
+    color: #FFFFFF;
+}
+select{
+    font-size: 16px;
+    color: #FFFFFF;
+}
+input[type="time"]{
+    font-size: 16px;
+    color: #FFFFFF;
+}
+option{
+    color: #111114;
+}
+input::placeholder,text::placeholder{
+    font-size: 16px;
+    line-height: 26px;
+    color: #FFFFFF;
+    opacity: 1;
+}
+input:focus::placeholder{
+    color: transparent;
+}
+button{
+    font-size: 16px;
+    border: 1px solid #FB8F2C;
+    border-radius: 8px;
+    color: #FFFFFF;
+    background-color: transparent;
+    cursor: pointer;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    padding: 15px;
+}
+button:hover{
+    background-color: #FB8F2C;
+}
+ul.address{
+    list-style: none;
+    padding: 0px;
+}
+h4{
+    font-family: 'Libre Bodoni';
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 40px;
+}
+li,a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 5px 0;
+}
+.section{
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
+.link-email{
+    color: #FB8F2C;
+}
+.get-direction:hover{
+    color: #FB8F2C;
+}
+.place{
+    margin: 20px 80px 0 80px;
+    display: inline-block;
+}
+.footer{
+    align-items: center;
+}
+.more-info{
+    display: table-cell;
+    padding-right: 30px;
+    padding-left: 30px;
+}
+ul.nav3{
+    list-style: none;
+    padding-left: 0px;
+}
+li.foot, a.foot{
+    font-size: 18px;
+    font-family: 'Plus Jakarta Sans';
+}
+.vector{
+    margin-bottom: 80px;
+}
+.sidebar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color: rgba(62, 180, 47, 0.1);
+    backdrop-filter: blur(10px);
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    list-style-type: none;
+}
+.sidebar li{
+    width: 100%;
+}
+.sidebar a{
+    width: 100%;
+}
+.menu-button{
+    display: none;
+}
+.error_message{
+    font-size: 16px;
+    color: red;
+    margin-top: 5px;
+    font-family: Plus Jakarta Sans;
+}   
+@media only screen and (max-width: 500px){
+    ul.link{
+        flex-direction: column;
+        text-align: left;
+    }
+    ul.open{
+        padding-left: 0px;
+    }
+    .input-box{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    input, select{
+        width: 280px;
+        height: 56px;
+    }
+    .online-reservation h2{
+        font-size: 40px;
+    }
+    .online-reservation p{
+        font-size: 16px;
+    }
+    .section{
+        margin-bottom: 20px;
+    }
+    .place{
+        margin-top: 0px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .place h4{
+        margin-bottom: 10px;
+    }
+    .place li,a{
+        font-size: 16px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .nav1{
+        margin-left: 10px;
+    }
+    .logo{
+        margin-left: 80px;
+        margin-right: 0;
+    }
+    .nav2{
+        margin-right: 10px;
+        margin-left: 0;
+    }
+    .more-info{
+        display: block;
+    }
+    .link li.head{
+        display: none;
+    }
+    .menu-button{
+        display: block;
+    }
+}

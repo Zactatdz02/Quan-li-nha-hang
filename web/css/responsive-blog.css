@@ -1,0 +1,298 @@
+/* PC */
+@media screen and (min-width: 992px) {
+  .mobile-header {
+    display: none;
+  }
+
+  hr {
+    margin-top: 200px;
+  }
+}
+
+/* Tablet & Mobile*/
+@media screen and (max-width: 991px) {
+  .navbar {
+    position: relative;
+  }
+
+  .navbar .logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: 20px;
+  }
+
+  .navbar ul {
+    display: none;
+  }
+  .navbar .actions .action-link {
+    display: none;
+  }
+  .navbar .open {
+    display: none;
+  }
+
+  .toggle-menu {
+    width: 20px;
+    color: #fb8f2c;
+    margin-left: 85px;
+  }
+
+  .menu-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 1;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s ease;
+  }
+
+  .menu-drawer {
+    position: fixed;
+    inset: 0 80% 0 0;
+    background: #000;
+    z-index: 2;
+    padding: 60px;
+    transform: translate(-100%);
+    transition: 0.5s ease;
+  }
+
+  .menu-drawer ul {
+    margin-top: 40px;
+  }
+
+  .menu-drawer ul a {
+    display: inline-block;
+    padding: 24px 0;
+    color: #fff;
+    font-family: "Plus Jakarta Sans", sans-serif;
+  }
+
+  .menu-drawer ul a:hover {
+    color: #fb8f2c;
+  }
+  .menu-checkbox:checked ~ .menu-overlay {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .menu-checkbox:checked ~ .menu-drawer {
+    transform: translate(0);
+  }
+}
+/* Tablet */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .menu-drawer {
+    inset: 0 65% 0 0;
+  }
+  ul li a.login {
+    display: none;
+  }
+  .navbar img {
+    margin-left: 260px;
+  }
+  .heading .first-blog {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .heading .first-blog img {
+    width: 100%;
+    margin: 0;
+  }
+
+  .heading .first-blog .details {
+    width: 90%;
+  }
+
+  .heading .first-blog .details h3 {
+    margin-left: 100px;
+    margin-top: 20px;
+    font-family: "Libre Bodoni";
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .heading .first-blog .details p {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    margin-left: 100px;
+  }
+
+  .heading .first-blog a {
+    width: 13%;
+    text-align: center;
+    margin-top: 0px;
+    margin-left: 100px;
+    padding-bottom: 5px;
+  }
+
+  hr {
+    width: 100%;
+    margin-top: 100px;
+  }
+
+  .more-blogs .content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .more-blogs .content .art-blog {
+    margin-left: 100px;
+  }
+
+  .art-blog h3 {
+    width: 70%;
+    margin-top: 20px;
+    font-family: "Libre Bodoni";
+    font-size: 30px;
+    text-align: left;
+  }
+
+  .newsletter {
+    display: none;
+  }
+
+  .content-footer {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}
+
+/* Mobile */
+@media screen and (max-width: 767px) {
+  .toggle-menu {
+    margin-left: 24px;
+  }
+
+  .navbar .logo {
+    position: absolute;
+    margin-top: 20px;
+    margin-left: 20px;
+  }
+
+  .logo-desktop img {
+    margin-left: 96px;
+  }
+
+  .navbar .actions {
+    display: none;
+  }
+
+  .menu-drawer {
+    width: 50%;
+  }
+
+  ul li a.login {
+    border: 2px solid #fb8f2c;
+    border-radius: 8px;
+    padding: 5px;
+    margin-top: 10px;
+  }
+
+  .content-heading {
+    width: 100%;
+  }
+
+  .content-heading h1 {
+    display: inline;
+    font-family: "Libre Bodoni";
+    font-size: 35px;
+    font-weight: 700;
+    margin-top: 50px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: 50px;
+    border-top: 1px solid #ffffffcc;
+    border-bottom: 1px solid #ffffffcc;
+    padding: 20px;
+  }
+
+  .first-blog .details {
+    margin-left: 18px;
+  }
+
+  .first-blog img {
+    width: 80%;
+    height: auto;
+    margin-left: 18px;
+    margin-right: 42px;
+    margin-bottom: 30px;
+  }
+
+  .first-blog .details h3 {
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 30px;
+  }
+
+  .first-blog p {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    margin-bottom: 24px;
+  }
+
+  .first-blog a {
+    font-size: 12px;
+    margin-top: 34px;
+    margin-left: 18px;
+    padding: 5px;
+  }
+
+  hr {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .more-blogs .content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .more-blogs .content .art-blog {
+    width: 100%;
+  }
+
+  .more-blogs .content .art-blog img {
+    width: 80%;
+    height: auto;
+  }
+
+  .more-blogs .content .art-blog h3 {
+    font-size: 25px;
+    line-height: 35px;
+    margin-top: 20px;
+  }
+
+  .more-blogs .content .art-blog p {
+    font-size: 14px;
+  }
+
+  .more-blogs .content .art-blog a {
+    font-size: 12px;
+    padding: 5px;
+  }
+
+  .newsletter {
+    display: none;
+  }
+
+  .pagination {
+    text-align: center;
+  }
+
+  .pagination .prev {
+    display: none;
+  }
+
+  .pagination .next {
+    display: none;
+  }
+
+  footer .content-footer {
+    display: none;
+  }
+}

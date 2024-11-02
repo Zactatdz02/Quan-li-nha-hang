@@ -1,0 +1,228 @@
+/* PC */
+@media screen and (min-width: 992px) {
+  .mobile-header {
+    display: none;
+  }
+}
+
+/* Tablet & Mobile*/
+@media screen and (max-width: 991px) {
+  .navbar {
+    position: relative;
+  }
+
+  .navbar .logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: 20px;
+  }
+
+  .navbar ul {
+    display: none;
+  }
+  .navbar .actions .action-link {
+    display: none;
+  }
+  .navbar .open {
+    display: none;
+  }
+
+  .toggle-menu {
+    width: 20px;
+    color: #fb8f2c;
+    margin-left: 85px;
+  }
+
+  .menu-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 1;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s ease;
+  }
+
+  .menu-drawer {
+    position: fixed;
+    inset: 0 80% 0 0;
+    background: #000;
+    z-index: 2;
+    padding: 60px;
+    transform: translate(-100%);
+    transition: 0.5s ease;
+  }
+
+  .menu-drawer ul {
+    margin-top: 40px;
+  }
+
+  .menu-drawer ul a {
+    display: inline-block;
+    padding: 24px 0;
+    color: #fff;
+    font-family: "Plus Jakarta Sans", sans-serif;
+  }
+
+  .menu-drawer ul a:hover {
+    color: #fb8f2c;
+  }
+  .menu-checkbox:checked ~ .menu-overlay {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .menu-checkbox:checked ~ .menu-drawer {
+    transform: translate(0);
+  }
+
+  .content-contact {
+    flex-direction: column;
+  }
+
+  .content-git {
+    flex-direction: column;
+  }
+
+  .content-git img {
+    display: none;
+  }
+
+  .form-space form {
+    max-width: 40%;
+  }
+}
+
+/* Tablet */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  body {
+    overflow-x: hidden;
+  }
+  .menu-drawer {
+    inset: 0 65% 0 0;
+  }
+  ul li a.login {
+    display: none;
+  }
+  .content-contact {
+    flex-direction: column;
+  }
+
+  .content-contact .map {
+    margin-left: 85px;
+  }
+
+  .content-git {
+    flex-direction: column;
+  }
+
+  .content-git img {
+    display: none;
+  }
+
+  .form-space form {
+    max-width: 40%;
+  }
+
+  .content-footer {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}
+
+/* Mobile */
+@media screen and (max-width: 767px) {
+  .toggle-menu {
+    margin-left: 24px;
+  }
+
+  .navbar .logo {
+    position: absolute;
+    margin-top: 20px;
+    margin-left: 20px;
+  }
+
+  .logo-desktop img {
+    margin-left: 96px;
+  }
+
+  .navbar .actions {
+    display: none;
+  }
+
+  .menu-drawer {
+    width: 50%;
+  }
+
+  ul li a.login {
+    border: 2px solid #fb8f2c;
+    border-radius: 8px;
+    padding: 10px;
+    margin-top: 10px;
+  }
+
+  .contact {
+    width: 100%;
+  }
+
+  .contact .content-contact {
+    width: 100%;
+  }
+
+  .content-contact .sub {
+    width: 100%;
+    margin-top: 80px;
+    margin-left: 24px;
+  }
+
+  .content-contact p {
+    width: 100%;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 30px;
+    margin-top: 35px;
+    margin-bottom: 35px;
+  }
+
+  .content-contact .map {
+    display: none;
+  }
+
+  .get-in-touch .content-git {
+    max-width: 430px;
+  }
+
+  .content-git .form-space h1 {
+    margin-top: 100px;
+    margin-left: 24px;
+    font-size: 25px;
+  }
+
+  .form-space form {
+    max-width: 430px;
+    margin-left: 24px;
+  }
+
+  .form-space input {
+    width: 400px;
+  }
+
+  .form-space textarea {
+    width: 400px;
+  }
+
+  .form-space a {
+    margin-bottom: 20px;
+  }
+
+  hr {
+    display: nosne;
+  }
+
+  footer {
+    display: none;
+  }
+}

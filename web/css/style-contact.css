@@ -1,0 +1,262 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: auto;
+  font-size: 16px;
+  background-color: #111114;
+}
+/* ======= COMMON ========= */
+a {
+  text-decoration: none;
+}
+
+.content {
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.btn {
+  display: inline-block;
+  min-width: 128px;
+  padding: 10px 20px;
+  color: #fff;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  border: 2px solid #fb8f2c;
+  border-radius: 5px;
+}
+
+hr {
+  max-width: 1440px;
+}
+/* ======= HEADER ======== */
+header {
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  padding-top: 25px;
+}
+
+.navbar ul {
+  display: flex;
+  margin-left: 50px;
+}
+
+.navbar .logo-desktop {
+  margin: auto;
+}
+
+.navbar .actions {
+  margin-left: auto;
+}
+
+.navbar ul a {
+  color: #fff;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  padding: 18px 16px;
+}
+
+.navbar ul a:hover {
+  color: #fb8f2c;
+}
+
+.navbar .open {
+  color: #fff;
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+.navbar .action-link {
+  font-weight: 500;
+  font-size: 16px;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  color: #fff;
+}
+
+.navbar .action-btn {
+  font-weight: 500;
+  font-size: 16px;
+  color: #fff;
+  margin-left: 25px;
+  margin-right: 50px;
+}
+
+.navbar .action-btn:hover {
+  background-color: #fb8f2c;
+  opacity: 0.8;
+}
+
+/* ========= Where to find us ============== */
+.contact {
+  color: #fff;
+}
+
+.contact .content-contact {
+  width: 1440px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.content-contact .sub {
+  margin-top: 128px;
+  margin-left: 85px;
+}
+
+.content-contact h1 {
+  font-family: "Libre Bodoni";
+  font-size: 40px;
+  font-weight: 600;
+}
+
+.content-contact p {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  margin-top: 10px;
+  margin-bottom: 24px;
+}
+
+.content-contact .sub {
+  width: 40%;
+}
+
+.map {
+  margin-top: 140px;
+  margin-right: 85px;
+}
+
+/* =================== GET IN TOUCH ==================*/
+.get-in-touch {
+  color: #fff;
+}
+
+.get-in-touch .content-git {
+  display: flex;
+  justify-content: space-between;
+  width: 1440px;
+  margin: 0 auto;
+}
+
+.content-git .form-space h1 {
+  margin-bottom: 30px;
+  font-family: "Libre Bodoni";
+  font-size: 40px;
+  font-weight: 600;
+  margin-top: 136px;
+  margin-left: 85px;
+}
+
+input {
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 28px;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 1px solid #fff;
+  padding: 10px;
+}
+
+input[type="text"] {
+  display: flex;
+  background-color: transparent;
+  color: #fff;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 400;
+}
+
+.form-space form {
+  margin-left: 85px;
+}
+
+.form-space textarea {
+  display: flex;
+  width: 100%;
+  height: 150px;
+  padding: 10px;
+  margin: 10px 0;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #fff;
+  color: white;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 400;
+  resize: vertical;
+}
+
+.form-space a {
+  margin-top: 36px;
+  text-align: center;
+}
+
+.form-space a:hover {
+  background-color: #fb8f2c;
+}
+
+.content-git img {
+  margin-top: 136px;
+  margin-right: 85px;
+}
+
+/* ============== FOOTER ============= */
+
+footer {
+  color: #fff;
+}
+
+footer .content-footer {
+  display: flex;
+  justify-content: center;
+  margin-top: 80px;
+  margin-bottom: 40px;
+}
+
+footer .logo {
+  margin-top: 60px;
+  margin-right: 77px;
+}
+
+.more {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 60px;
+}
+
+.more p {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.more ul {
+  margin-top: 24px;
+}
+
+.more li {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 40px;
+}
+
+.more-info a {
+  color: #fff;
+}
+
+.more-info a:hover {
+  color: #fb8f2c;
+}
+
+.more-info {
+  margin-left: 77px;
+}

@@ -1,0 +1,224 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    color: white;
+    background-image: url('../images/login/back-ground.jpg');
+}
+
+.login-container {
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+    margin-top: 120px;
+}
+
+.login-container h2 {
+    margin-bottom: 20px;
+}
+
+.input {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.input label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.input input {
+    width: 100%;
+    padding: 10px 0px 10px 5px; 
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #FFFFFF1A;
+    color: #fff;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: orange;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #db6f0a;
+}
+
+.register {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.register a {
+    color: #4CAF50;
+    text-decoration: none;
+}
+
+.register a:hover {
+    text-decoration: underline;
+}
+
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    width: 100%;
+    height: auto;
+    font-size: 16px;
+    background-color: #111114;
+  }
+  /* ======= COMMON ========= */
+  a {
+    text-decoration: none;
+  }
+  
+  .content {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  
+  .btn {
+    display: inline-block;
+    min-width: 128px;
+    padding: 10px 20px;
+    color: #fff;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    border: 2px solid #fb8f2c;
+    border-radius: 5px;
+  }
+  
+  hr {
+    max-width: 1440px;
+  }
+  /* ======= HEADER ======== */
+  header {
+    height: 100px; 
+    position: fixed; 
+    top: 0; 
+    left: 0;
+    right: 0;
+    background-color: rgb(17, 17, 20);
+    z-index: 1000;
+}
+  
+  .navbar {
+    display: flex;
+    align-items: center;
+    padding-top: 25px;
+  }
+  
+  .navbar ul {
+    display: flex;
+    margin-left: 50px;
+    list-style-type: none;
+  }
+  
+  .navbar img {
+    margin: auto;
+  }
+  
+  .navbar .actions {
+    margin-left: auto;
+  }
+  
+  .navbar ul a {
+    color: #fff;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    padding: 18px 16px;
+  }
+  
+  .navbar ul a:hover {
+    color: #fb8f2c;
+  }
+  
+  .navbar .open {
+    color: #fff;
+    font-family: "Plus Jakarta Sans", sans-serif;
+  }
+  
+  .navbar .action-link {
+    font-weight: 500;
+    font-size: 16px;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    color: #fff;
+  }
+  
+  .navbar .action-btn {
+    font-weight: 500;
+    font-size: 16px;
+    color: #fff;
+    margin-left: 25px;
+    margin-right: 50px;
+  }
+  
+  .navbar .action-btn:hover {
+    background-color: #fb8f2c;
+    opacity: 0.8;
+  }
+  
+  /* ============== FOOTER ============= */
+  
+  footer {
+    color: #fff;
+  }
+  
+  footer .content {
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+    margin-bottom: 40px;
+  }
+  
+  footer .logo {
+    margin-top: 60px;
+    margin-right: 77px;
+  }
+  
+  .more {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 60px;
+  }
+  
+  .more p {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+  }
+  
+  .more ul {
+    margin-top: 24px;
+    list-style-type: none;
+  }
+  
+  .more li {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-weight: 400px;
+    font-size: 16px;
+    line-height: 40px;
+  }
+  
+  .more-info a {
+    color: #fff;
+  }
+  
+  .more-info a:hover {
+    color: #fb8f2c;
+  }
+  
+  .more-info {
+    margin-left: 77px;
+  }
